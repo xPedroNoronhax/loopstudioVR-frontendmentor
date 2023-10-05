@@ -1,0 +1,241 @@
+@use 'variaveis';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*{
+    font-family: variaveis.$FontePrincipal;
+}
+
+
+.header{
+    background: url(https://img.freepik.com/premium-vector/concept-virtual-reality-technology-vr_46706-830.jpg?size=626&ext=jpg&ga=GA1.1.1976545698.1682354132&semt=ais);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    font-family: variaveis.$FonteHeader;
+    
+    a{
+        color: variaveis.$White;
+        cursor: pointer;
+    }
+    a:hover{
+        opacity: 1;
+    }
+
+    button{
+        display: none;
+    }
+}
+
+.header-slogan{
+    display: flex;
+    align-items: center;
+    color: variaveis.$White;
+    text-transform: uppercase;
+    height: 408px;
+    
+    h1 {
+        border: 2px solid variaveis.$White;
+        letter-spacing: .5em ;
+    }
+
+    span{
+        display: block;
+    }
+}
+
+.slogan-text{
+    border: 2px solid white;
+    span{
+        letter-spacing: 10px;
+    }
+}
+
+
+
+.interactive-content{
+    background-color: white;
+    position: relative;
+    top: 99px;
+    left: -160px;
+
+
+    h2{
+        font-size: 3.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.content-two{
+    h2{
+        font-family: variaveis.$FontePrincipal;
+        text-transform: uppercase;
+    }
+}
+
+.btn-creation{
+    font-family: variaveis.$FonteHeader;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 150px;
+    transition: .3s;
+    
+    &:hover{
+        color: white;
+        background-color: black;
+        
+    }
+}
+
+
+    .container-img {
+        position: relative; 
+        display: inline-block;
+        cursor: pointer;
+
+        span{
+            text-transform: uppercase;
+            font-family: variaveis.$FontePrincipal;
+        }
+    }
+
+
+    .img-creation:hover{
+        opacity: .5;
+        transition: .3s;
+    }
+
+    .img-legend {
+        position: absolute; /* Posiciona o texto de forma absoluta dentro do contêiner */
+        top: 85%; /* Alinha o topo do texto ao centro vertical do contêiner */
+        left: 48%; /* Alinha a esquerda do texto ao centro horizontal do contêiner */
+        transform: translate(-50%, -50%); /* Move o texto para o centro do contêiner */
+        background-color: rgba(0,0,0,0.2); /* Fundo semi-transparente para legibilidade */
+        color: #fff; /* Cor do texto */
+        padding: 10px; /* Espaçamento interno para o texto */
+      }
+
+    .footer{
+        background-color: black;
+    }
+
+    .footer-menu{
+        li{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+
+            &:hover{
+                border-bottom: 1px solid white;
+                color: white;
+            }
+        }
+    }
+
+    .copyright{
+        color: variaveis.$VerydarkGray;
+        margin-right: 5px;
+    }
+
+
+
+@media (max-width: 767px){
+    
+        
+    .header-slogan{
+        max-width: 100%;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .slogan-text{
+        margin-bottom: 20px;
+
+    }
+
+    .interactive-content{
+        position: static;
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .interactive-img{
+        margin-bottom: 20px;
+    }
+
+    .content-two{
+        h2{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .section-desktop{
+        display: none;
+    }
+
+    .container-sm-img{
+        position: relative; 
+        display: inline-block;
+
+        span{
+            text-transform: uppercase;
+            font-family: variaveis.$FontePrincipal;
+        }
+    }
+
+    .btn-creation{
+        display: none;
+    }
+
+    .btn-mb-creations{
+        font-family: variaveis.$FonteHeader;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .img-sm-legend {
+        position: absolute; /* Posiciona o texto de forma absoluta dentro do contêiner */
+        top: 60%; /* Alinha o topo do texto ao centro vertical do contêiner */
+        left: 32%; /* Alinha a esquerda do texto ao centro horizontal do contêiner */
+        transform: translate(-50%, -50%); /* Move o texto para o centro do contêiner */
+        background-color: rgba(0,0,0,0.2); /* Fundo semi-transparente para legibilidade */
+        color: #fff; /* Cor do texto */
+        padding: 10px; /* Espaçamento interno para o texto */
+      }
+
+      .footer-desktop{
+        display: none;
+      }
+
+      .footer-mobile{
+        background-color: black;
+
+      }
+
+      .menu-mobile{
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+      }
+    }
+
